@@ -16,7 +16,7 @@ public class RentController {
     public String insertRenter(Renter renter){
         renterDao.save(renter);
 
-        return "Test.html";
+        return "tenant.html";
     }
     @RequestMapping("/")
     public String greet(){
