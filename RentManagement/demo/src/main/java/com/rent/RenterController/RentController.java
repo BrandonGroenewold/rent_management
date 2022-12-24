@@ -23,4 +23,12 @@ public class RentController {
         return "index.html";
     }
 
+    @RequestMapping("/insertProprietor")
+    public String insertProprietor(Proprietor proprietor){
+        returnDao.save(proprietor);
+
+        return "proprietor.html";
+
+    }
+
 }
