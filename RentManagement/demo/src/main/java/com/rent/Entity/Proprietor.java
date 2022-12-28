@@ -1,4 +1,4 @@
-package com.rent.RenterEntity;
+package com.rent.Entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Renter {
+public class Proprietor {
 
     @Id
     @Column(name = "U_Id")
@@ -23,8 +23,11 @@ public class Renter {
     private String state;
     private String email;
     private String phone;
-    private String credit;
+    private String BankRoute;
+    private String AccountType;
+    private String BankName;
+    private String AccountNumber;
 
-
-
+    // bank route number - take out credit card
+    //bank account number
 }

@@ -1,7 +1,9 @@
 package com.rent.RenterController;
 
-import com.rent.RenterDao.RenterDao;
-import com.rent.RenterEntity.Renter;
+import com.rent.Dao.ProprietorDao;
+import com.rent.Entity.Proprietor;
+import com.rent.Dao.RenterDao;
+import com.rent.Entity.Renter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +13,9 @@ public class RentController {
 
     @Autowired
     RenterDao renterDao;
+
+    @Autowired
+    ProprietorDao proprietorDao;
 
     @RequestMapping("/insertRenter")
     public String insertRenter(Renter renter){
@@ -25,7 +30,7 @@ public class RentController {
 
     @RequestMapping("/insertProprietor")
     public String insertProprietor(Proprietor proprietor){
-        returnDao.save(proprietor);
+        proprietorDao.save(proprietor);
 
         return "proprietor.html";
 

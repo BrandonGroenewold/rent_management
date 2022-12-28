@@ -1,6 +1,6 @@
-package com.rent.RenterDao;
+package com.rent.Dao;
 
-import com.rent.RenterEntity.Renter;
+import com.rent.Entity.Renter;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
