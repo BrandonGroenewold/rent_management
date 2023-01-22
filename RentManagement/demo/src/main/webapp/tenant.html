@@ -53,14 +53,29 @@
 <div class="sign-up-form">
   <img src="images/tenant-login-icon.jpeg" class="tenant-login-icon">
   <h1> Sign Up Now</h1>
-  <form>
-    <input type="email" class="tenant-input-box" placeholder="Your Email">
-    <input type="password" class="tenant-input-box" placeholder="Your Password">
+  <form action ="insertRenter" class="signup_form"> <!-- put in changes here - should just be form otherwise -->
+    <input type="text" name="email" class="tenant-input-box" placeholder="Your Email">
+    <input type="text" name="password" class="tenant-input-box" placeholder="Your Password">
+    <h6>Name</h6>
+    <input type="text" name="name"><br>
+    <h6>Address</h6>
+    <input type="text" name="address"><br>
+    <h6>City</h6>
+    <input type="text" name="city"><br>
+    <h6>State</h6>
+    <input type="text" name="state"><br>
+
+    <h6>Phone Number</h6>
+    <input type="text" name="phone"><br>
+    <h6>Credit Card Number</h6>
+    <input type="text" name="credit"><br>
     <p> <span> <input type="checkbox"> </span> I agree to the terms of services</p>
-    <button type="button" class="tenant-signup-btn">Sign Up</button>
+    <button type="submit" class="tenant-signup-btn" >Sign Up</button>  <!-- put href in so it brings person to account page -->
     <hr class="tenant-hr">
     <p class="tenant-or">OR</p>
-    <p>Do you have an account? <a class="tenant-a" href="#">Sign In</a></p>
+  </form>
+  <form>
+    <p>Do you have an account? <a class="tenant-a" href="#">Login</a></p>
   </form>
 
 </div>

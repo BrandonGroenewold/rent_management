@@ -24,6 +24,7 @@ public class Renter {
     private String email;
     private String phone;
     private String credit;
+    private String password;
 
 
 
