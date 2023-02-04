@@ -82,6 +82,7 @@ ul li a:hover{
     color: #000; */
 }
 
+
 /* not sure why this part isn't working */
 /*ul li.active a{
     background-color: #fff;
@@ -108,7 +109,7 @@ ul li a:hover{
     padding: 0;
     font-family: sans-serif;
     height: 100vh;
-    background-image: url(../images/tenant-bg.jpeg);
+    background-image: url(../images/tenant-signup-bg.jpeg);
     background-size: cover;
     /* background-position: center; */
 }
@@ -169,4 +170,28 @@ ul li a:hover{
 .tenant-login-icon{
     width: 120px;
     margin-top: -90px;
+}
+
+/* My account page */
+
+
+
+
+
+/* About page */
+.about-title{
+    position:relative;
+    text-align: center;
+    font-size: 50px;
+}
+
+#last-item{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1rem;
+    margin-left: auto;
+    display:flex;
+    padding: 0 1rem;
+    align-items: center;
+
 }
