@@ -15,34 +15,27 @@
 </head>
 <header>
   <!--Navbar Starts Here-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">
-      <img src="images/circle_r.png" width="30" height="30" alt="">
+  <nav class="topnav">
+    <a class="navbar-brand" href="#">
+        <img src="images/circle_r.png" width="30" height="30" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home </span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tenant Login/Sign-Up</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="proprietor.html">Proprietor Login/Sign-Up</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+    <a class="active" href="index.html">Home</a>
+    <a href="#">Signup/Login</a>
+    <div class="topnav-right">
+        <a href="myAccount.html">My Account</a>
+        <div class="dropdown">
+            <button class="dropbutn">Menu</button>
+            <div class="dropdown-content">
+                <a href="about.html">About</a>
+                <a href="help.html">Help</a>
+                <a href="renterTools.html">Renter Tools</a>
+            </div>
+        </div>
     </div>
 
-  </nav>
+  
+
+</nav>
   <!--Navbar Ends Here-->
   <title> Sign Up Form</title>
 </header>
@@ -55,7 +48,8 @@
   <h1> Sign Up Now</h1>
   <form action ="insertRenter" class="signup_form"> <!-- put in changes here - should just be form otherwise -->
     <input type="text" name="email" class="tenant-input-box" placeholder="Your Email">
-    <input type="text" name="password" class="tenant-input-box" placeholder="Your Password">
+    <input type="Password"  required
+           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~=?\|<>/]).{8,}"name="password" class="tenant-input-box" placeholder="Your Password">
     <h6>Name</h6>
     <input type="text" name="name"><br>
     <h6>Address</h6>
