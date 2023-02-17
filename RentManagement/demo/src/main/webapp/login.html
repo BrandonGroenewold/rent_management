@@ -48,20 +48,63 @@
     <!--Navbar Ends Here-->
 </header>
 <body>
-<p class="about-title">About Us</p>
-<p class="mission-statement"> Here at Renters United we took it upon ourselves to reimagine was it is to rent. We make it easier for
-    someone get started renting or to find the best deals on a place to rent</p>
-<p class="about-1">Renters United focuses on helping someone just starting to rent out homes or has a spare property that they would
-like to make some extra money on. Using our site will provide a hassle-free way to advertise and lease out your
-property. You will even be able to collect rent through our website making it convenient for you and your tenant(s).
-    With our included features you will even be able to pay the utilities or make it easy for the tenant(s) to pay
-    utilities.
-</p>
-<p class="about-2"> Another fantastic deal of our website is with people from the community renting out and not big corporations
-you can find deals you can't anywhere else. We the people set the prices and you wont pay hundreds or thousands of
-dollars to live in a cardboard box for two. Renters United makes it easy for you to find that place and manage your
-expenses that come with it as you will be able to pay your utilities and rent in one place. Feel free to search the
-site and contact anyone who may be renting as you can sign the lease on this website and view it anytime.</p>
-<p class="about-contact">Feel free to contact us at sample@sample.com</p>
+
+    <body class="login-body">
+        <div class="sign-up-form">
+          <img src="images/profile-login.png" class="signup-icon">
+          <h1> Welcome Back!</h1>
+          <form action ="insertRenter" class="signup_form"> <!-- put in changes here - should just be form otherwise -->
+            <input type="text" name="email" class="signup-input-box" placeholder="Your Email">
+            <input type="text" name="password" class="signup-input-box" placeholder="Your Password">
+            <!-- <p> <span> <input type="checkbox"> </span> I agree to the <a class="tenant-a" href="termsofservice.html">terms of services</a></p> -->
+            <button type="submit" class="tenant-signup-btn" >Login</button>  <!-- put href in so it brings person to account page -->
+            <hr class="tenant-hr">
+            <p class="tenant-or">OR</p>
+          </form>
+          <form>
+            <p>Don't have an account yet? <a class="tenant-a" href="signup.html">Sign Up</a></p>
+          </form>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="signup_form">
+    <form action ="insertProprietor" class="signup_form">
+        <h2>Proprietor Sign Up </h2>
+        <h6>Name</h6>
+        <input type="text" name="name"><br>
+        <h6>Address</h6>
+        <input type="text" name="address"><br>
+        <h6>City</h6>
+        <input type="text" name="city"><br>
+        <h6>State</h6>
+        <input type="text" name="state"><br>
+        <h6>Email Address</h6>
+        <input type="text" name="email"><br>
+        <h6>Phone Number</h6>
+        <input type="text" name="phone"><br>
+        <h6>Bank Name</h6>
+        <input type="text" name="BankName"><br>
+        <h6>Account Type</h6>
+        <input type="text" name="AccountType"><br>
+        <h6>Account Number</h6>
+        <input type="text" name="AccountNumber"><br>
+        <h6>Bank Routing Number</h6>
+        <input type="text" name="BankRoute"><br>
+
+
+        <input type="submit">
+        <br>
+    </form>
+</div> -->
+
 </body>
 </html>
