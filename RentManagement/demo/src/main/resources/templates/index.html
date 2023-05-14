@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:c="http://www.w3.org/1999/XSL/Transform">
 
 <!--Head Starts Here-->
 <head>
@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS files will be here -->
+   <!--  <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/> -->
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="static/reset.css">
     <link rel="stylesheet" href="static/bootstap.min.css" media="screen">
@@ -29,20 +30,33 @@
                     <a class="nav-link" href="#">Home </span></a>
                 </li>
                 <li class="nav-item float-left">
-                    <a class="nav-link" href="signup.html">Sign-Up</a>
+                <!--    <a class="nav-link" href="signup.html">Sign-Up</a>      -->
+                    <a class ="nav-link" href="#"   th:href="@{/signup}">Sign-Up</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class ="nav-link" href="#"   th:href="@{/login}">Login</a>
+              <!--      <a class="nav-link" href="login.html">Login</a>   -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+
+                  <!--  <a class="nav-link" href="about.html">About</a> -->
+                    <a class ="nav-link" href="#"   th:href="@{/about}">About</a>
                 </li>
                 </ul>
                 <ul class="navbar-nav ms-auto" style="margin-right:1%">
                 <li class="nav-item justify-content-right">
-                    <a class="nav-link" href="account.html">My Account</a>
+                    <a class ="nav-link" href="#"   th:href="@{/account}">My Account</a>
+                   <!-- <a class="nav-link" href="account.html">My Account</a> -->
                 </li>
+
+              <!--  <a href="index.html" th:href="@{/}"></a>
+                    <a href="#" style="color: white" th:href="@{/}">Home</a>
+                    <a href="#" style="color: white" th:href="@{/add}">Add Items</a>
+                    <a href="#"  style="color: white" th:href="@{/items}">Get Items</a>     -->
+
+
             </ul>
+
         </div>
 
     </nav>
@@ -55,10 +69,17 @@
 <body class="body_index">
 
 <div class="home_content">
+<<<<<<< HEAD:RentManagement/demo/src/main/webapp/index.html
     <p class="header_one" id="title"> Welcome to Renter's United </p>
     <p class="header_two" id="title"> Renting Reimagined </p>
     <p class="header_two" id="title"> <a href="signup.html" class="tenant-a">Sign Up</a> to get started or visit our <a href="about.html" class="tenant-a">About</a> page </p>
     <p><a href="../templates/checkout.html">check out</a></p>
+=======
+<p class="header_one" id="title"> Welcome to Renter's United </p>
+<p class="header_two" id ="title"> Renting Reimagined </p>
+<p class="header_two" id = "title">  <a class ="tenant-a" href="#"   th:href="@{/signup}">Sign-Up</a> to get started or visit our  <a class ="tenant-a" href="#"   th:href="@{/about}">About</a> page </p>
+<p>  <a class ="nav-link" href="#"   th:href="@{/checkout}">Checkout</a></p>
+>>>>>>> origin/Luke:RentManagement/demo/src/main/resources/templates/index.html
 </div>
 
 
