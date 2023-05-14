@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:c="http://www.w3.org/1999/XSL/Transform">
 <head>
     <meta charset="UTF-8">
     <!-- These three elements must come first! -->
@@ -25,21 +25,26 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home </span></a>
+                    <a class ="nav-link" href="#"   th:href="@{/index}">Home</a>
+                  <!--  <a class="nav-link" href="index.html">Home</a> -->
                 </li>
                 <li class="nav-item float-left">
-                    <a class="nav-link" href="signup.html">Sign-Up</a>
+                    <a class ="nav-link" href="#"   th:href="@{/signup}">Sign-Up</a>
+                <!--    <a class="nav-link" href="signup.html">Sign-Up</a> -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class ="nav-link" href="#"   th:href="@{/login}">Login</a>
+                  <!--  <a class="nav-link" href="login.html">Login</a>  -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class ="nav-link" href="#"   th:href="@{/about}">About</a>
+                <!--    <a class="nav-link" href="about.html">About</a> -->
                 </li>
                 </ul>
                 <ul class="navbar-nav ms-auto" style="margin-right:1%">
                 <li class="nav-item justify-content-right">
-                    <a class="nav-link" href="account.html">My Account</a>
+                    <a class ="nav-link" href="#"   th:href="@{/account}">My Account</a>
+                 <!--   <a class="nav-link" href="account.html">My Account</a>    -->
                 </li>
             </ul>
         </div>
@@ -47,7 +52,8 @@
     </nav>
     <!--Navbar Ends Here-->
 </header>
-<body>
+
+ <body>
 
     <body class="login-body">
         <div class="sign-up-form">
@@ -64,6 +70,14 @@
           <form>
             <p>Don't have an account yet? <a class="tenant-a" href="signup.html">Sign Up</a></p>
           </form>
+<<<<<<< HEAD:RentManagement/demo/src/main/webapp/login.html
+</body>
+
+
+</html>
+=======
+    </body>
+</html>
 
 
 
@@ -105,6 +119,4 @@
         <br>
     </form>
 </div> -->
-
-</body>
-</html>
+>>>>>>> origin/Luke:RentManagement/demo/src/main/resources/templates/login.html

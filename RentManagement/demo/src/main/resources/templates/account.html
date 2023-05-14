@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:c="http://www.w3.org/1999/XSL/Transform">
 <head>
     <meta charset="UTF-8">
     <!-- These three elements must come first! -->
@@ -25,16 +25,21 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home </span></a>
+                  <!--  <a class="nav-link" href="index.html">Home </span></a>    -->
+                    <a class ="nav-link" href="#"   th:href="@{/index}">Home</a>
                 </li>
                 <li class="nav-item float-left">
-                    <a class="nav-link" href="signup.html">Sign-Up</a>
+                    <a class ="nav-link" href="#"   th:href="@{/signup}">Sign-Up</a>
+                   <!-- <a class="nav-link" href="signup.html">Sign-Up</a> -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class ="nav-link" href="#"   th:href="@{/login}">Login</a>
+                <!--    <a class="nav-link" href="login.html">Login</a>    -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+
+                    <a class ="nav-link" href="#"   th:href="@{/about}">About</a>
+                <!--    <a class="nav-link" href="about.html">About</a>    -->
                 </li>
                 </ul>
                 <ul class="navbar-nav ms-auto" style="margin-right:1%">
@@ -44,24 +49,34 @@
             </ul>
         </div>
 
+        <input type="checkbox" id="menu">
+<label for="menu" class="icon">
+        <div class="menu"></div>
+ </label>
+
+<nav>
+    <ul>
+        <li>
+            <i class="material-icons">sentiment_very_satisfied</i>Grade A 
+        </li>
+        <li>
+            <i class="material-icons">sentiment_satisfied</i>Grade B
+        </li>
+        <li>
+            <i class="material-icons">sentiment_neutral</i>Grade C
+        </li>
+        <li>
+            <i class="material-icons">sentiment_dissatisfied</i>Grade D
+        </li>
+        <li>
+            <i class="material-icons">sentiment_very_dissatisfied</i>Grade E
+        </li>
+    </ul>
+</nav>
     </nav>
     <!--Navbar Ends Here-->
 </header>
 <body>
-<p class="about-title">About Us</p>
-<p class="mission-statement"> Here at Renters United we took it upon ourselves to reimagine was it is to rent. We make it easier for
-    someone get started renting or to find the best deals on a place to rent</p>
-<p class="about-1">Renters United focuses on helping someone just starting to rent out homes or has a spare property that they would
-like to make some extra money on. Using our site will provide a hassle-free way to advertise and lease out your
-property. You will even be able to collect rent through our website making it convenient for you and your tenant(s).
-    With our included features you will even be able to pay the utilities or make it easy for the tenant(s) to pay
-    utilities.
-</p>
-<p class="about-2"> Another fantastic deal of our website is with people from the community renting out and not big corporations
-you can find deals you can't anywhere else. We the people set the prices and you wont pay hundreds or thousands of
-dollars to live in a cardboard box for two. Renters United makes it easy for you to find that place and manage your
-expenses that come with it as you will be able to pay your utilities and rent in one place. Feel free to search the
-site and contact anyone who may be renting as you can sign the lease on this website and view it anytime.</p>
-<p class="about-contact">Feel free to contact us at sample@sample.com</p>
+<p> Insert content</p>
 </body>
 </html>
